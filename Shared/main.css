@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0059;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0059ff;
+}
+
+* {
+    color: white;
+    font-family: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+a, button {
+    cursor: url('Cursors/link-select.cur'), auto;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+
+    background-color: rgba(0, 89, 255, 0.2);
+    backdrop-filter: blur(25px);
+
+    border: none;
+    border-radius: 100000000vw;
+
+    height: 7.5vh;
+
+    padding: 2.5vh;
+
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+html {
+    background-color: black;
+
+    cursor: url('Cursors/normal-select.cur'), auto;
+}
+
+.hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+
+    margin-top: 5%;
+
+    padding-bottom: 5vh;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-image: linear-gradient(90deg, transparent, rgba(85, 0, 0, 0.6), rgba(255, 0, 0, 0.5), rgba(85, 0, 0, 0.6), transparent) 100;
+}
+
+.icbm {
+    animation: 2.5s icbm infinite;
+
+    background-color: black;
+
+    border: 2px solid red;
+    border-radius: 100%;
+
+    width: 7.5vw;
+    height: 7.5vw;
+}
+
+.icbm-button {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.icbm-button:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+
+    user-select: none;
+}
+
+.logo-line {
+    background-image: linear-gradient(180deg, #0059ff, #0059);
+
+    height: 15vh;
+    width: 0.5vh;
+}
+
+.menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-image: linear-gradient(90deg, transparent, #0059, rgba(0, 89, 255, 0.5), #0059, transparent) 100;
+
+    height: 20vh;
+}
+
+.nova {
+    animation: 2.5s nova infinite;
+
+    background-color: black;
+
+    border: 2px solid #0059ff;
+    border-radius: 100%;
+
+    width: 7.5vw;
+    height: 7.5vw;
+}
+
+.source-button {
+    min-width: calc(100% + 15%);
+}
+
+@keyframes icbm {
+    0% {
+        box-shadow: 0px 0px 1px 12.5px rgba(255, 0, 0, 0.2), 0px 0px 500px 5px red;
+    }
+  
+    50% {
+        box-shadow: 0px 0px 1px 20px rgba(255, 0, 0, 0.2), 0px 0px 500px 10px red;
+    }
+  
+    100% {
+        box-shadow: 0px 0px 1px 12.5px rgba(255, 0, 0, 0.2), 0px 0px 500px 5px red;
+    }
+}
+
+@keyframes nova {
+    0% {
+        box-shadow: 0px 0px 1px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+    }
+  
+    50% {
+        box-shadow: 0px 0px 1px 20px rgba(0, 89, 255, 0.2), 0px 0px 500px 10px #0059ff;
+    }
+  
+    100% {
+        box-shadow: 0px 0px 1px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+    }
+}
