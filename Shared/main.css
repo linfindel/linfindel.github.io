@@ -23,6 +23,8 @@
     font-weight: 200;
     text-align: center;
     text-decoration: none;
+
+    transition: 0.25s ease;
 }
 
 *:focus {
@@ -53,8 +55,6 @@ button {
     height: 7.5vh;
 
     padding: 2.5vh;
-
-    transition: 0.25s ease;
 }
 
 button:hover {
@@ -82,27 +82,7 @@ html {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-image: linear-gradient(90deg, transparent, rgba(85, 0, 0, 0.6), rgba(255, 0, 0, 0.5), rgba(85, 0, 0, 0.6), transparent) 100;
-}
-
-.icbm {
-    animation: 2.5s icbm infinite;
-
-    background-color: black;
-
-    border: 2px solid red;
-    border-radius: 100%;
-
-    width: 7.5vw;
-    height: 7.5vw;
-}
-
-.icbm-button {
-    background-color: rgba(255, 0, 0, 0.2);
-}
-
-.icbm-button:hover {
-    background-color: rgba(255, 0, 0, 0.5);
+    border-image: linear-gradient(90deg, transparent, rgba(0, 89, 255, 0.6), rgba(0, 89, 255, 0.5), rgba(0, 89, 255, 0.6), transparent) 100;
 }
 
 .logo {
@@ -134,8 +114,13 @@ html {
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5%;
+
+    position: sticky;
+    top: 0;
+
+    backdrop-filter: blur(25px);
 
     border-top: none;
     border-left: none;
@@ -160,6 +145,15 @@ html {
 
 .source-button {
     min-width: calc(100% + 15%);
+}
+
+.words {
+    background-image: linear-gradient(to right, rgb(67, 206, 162), rgb(24, 90, 157));
+
+    border-radius: 10px;
+
+    width: 15vw;
+    height: 15vh;
 }
 
 @keyframes icbm {
