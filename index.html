@@ -9,6 +9,8 @@
     <link id="theme-style" rel="stylesheet" href="Shared/main.css">
 
     <script>
+        var themeSaved = localStorage.getItem("theme") || "main";
+        
         function setTheme(theme) {
             document.getElementById('theme-style').href = 'Shared/' + theme + '.css';
             if (theme == 'main') {
@@ -17,6 +19,8 @@
                 }
 
                 document.getElementById("theme-icon").innerText = "light_mode";
+
+                localStorage.setItem("theme", "main")
             }
 
             else {
@@ -25,6 +29,8 @@
                 }
 
                 document.getElementById("theme-icon").innerText = "dark_mode";
+
+                localStorage.setItem("theme", "light")
             }
         }
     </script>
@@ -90,5 +96,15 @@
             light_mode
         </span>
     </button>
+
+    <script>
+        if (themeSaved == "main") {
+            setTheme("main");
+        }
+
+        else {
+            setTheme("light");
+        }
+    </script>
 </body>
 </html>
