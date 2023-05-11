@@ -1,2 +1,2 @@
-# home
-My homepage
+# My homepage
+Pretty self-explanatory
