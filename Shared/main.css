@@ -121,6 +121,7 @@ html {
     top: 0;
 
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 
     border-top: none;
     border-left: none;
