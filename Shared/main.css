@@ -147,6 +147,16 @@ html {
     min-width: calc(100% + 15%);
 }
 
+.theme-switcher {
+    background-color: #0059ff;
+
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    
+    position: sticky;
+    bottom: 0;
+}
+
 .words {
     background-image: linear-gradient(to right, rgb(67, 206, 162), rgb(24, 90, 157));
 
