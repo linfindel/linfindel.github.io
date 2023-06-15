@@ -190,14 +190,14 @@ html {
 
 @keyframes nova {
     0% {
-        box-shadow: 0px 0px 1px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+        box-shadow: 0px 0px 0.000001px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
     }
   
     50% {
-        box-shadow: 0px 0px 1px 20px rgba(0, 89, 255, 0.2), 0px 0px 500px 10px #0059ff;
+        box-shadow: 0px 0px 0.000001px 20px rgba(0, 89, 255, 0.2), 0px 0px 500px 10px #0059ff;
     }
   
     100% {
-        box-shadow: 0px 0px 1px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+        box-shadow: 0px 0px 0.000001px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
     }
 }
