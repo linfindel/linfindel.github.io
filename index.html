@@ -1,154 +1,124 @@
 <!DOCTYPE html>
-<html oncontextmenu="return false" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nadir Technologies</title>
 
-    <link id="theme-style" rel="stylesheet" href="Shared/main.css">
-
-    <script>
-        var themeSaved = localStorage.getItem("theme") || "main";
-        
-        function setTheme(theme) {
-            document.getElementById('theme-style').href = 'Shared/' + theme + '.css';
-            if (theme == 'main') {
-                document.getElementById("theme-button").onclick = function() {
-                    setTheme("light");
-                }
-
-                document.getElementById("theme-icon").innerText = "light_mode";
-
-                localStorage.setItem("theme", "main")
-            }
-
-            else {
-                document.getElementById("theme-button").onclick = function() {
-                    setTheme("main");
-                }
-
-                document.getElementById("theme-icon").innerText = "dark_mode";
-
-                localStorage.setItem("theme", "light")
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="https://raw.githack.com/Nadir-Software/nadircss/main/nadir.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body class="body-font-noto text-center">
     <div class="navbar">
-        <a href="https://github.com/Nadir-Software">
-            <div class="logo">
-                <div class="logo-line"></div>
-                <h2 style="text-align: left;">Nadir <br> Technologies</h2>
-            </div>
-        </a>
+        <h1>Nadir Technologies</h1>
     </div>
 
-    <div class="hero">
-        <div class="nova"></div>
-        <div class="hero-text">
-            <h1>NovaAI</h1>
-            <p>Your partner for the web</p>
+    <div class="column" style="margin-top: 10rem;">
+        <div class="logo-nova"></div>
+
+        <div>
+            <h1>Nova</h1>
+            <p>Your AI partner for the web</p>
         </div>
 
-        <div class="logo">
-            <a href="https://nadir-software.github.io/nova" target="_blank"><button>Run in browser</button></a>
-            
-            <a href="https://github.com/Nadir-Software/nova" target="_blank">
-                <button class="source-button">
-                <svg class="github" height="24" version="1.1" viewBox="0 0 16 16" width="24">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="#ffffff"></path>
-                </svg>
+        <div class="row">
+            <a href="https://nadir-software.github.io/nova" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">open_in_new</span>
+                    Run in browser
+                </button>
+            </a>
 
-                View Source
+            <a href="https://www.github.com/Nadir-Software/nova" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">code</span>
+                    View source
                 </button>
             </a>
         </div>
     </div>
 
-    <div class="hero">
+    <div class="divider"></div>
+
+    <div class="column" style="margin-top: 5rem;"  >
         <img width="125" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/UN_emblem_blue.svg/2411px-UN_emblem_blue.svg.png" alt="UNESCO Logo">
-        <div class="hero-text">
+
+        <div>
             <h1>UNESCO</h1>
-            <p>Randomly-selected UNESCO World Heritage Sites</p>
+            <p>Randomly selected UNESCO World Heritage Sites</p>
         </div>
 
-        <div class="logo">
-            <a href="https://nadir-software.github.io/unesco" target="_blank"><button>Run in browser</button></a>
-            
-            <a href="https://github.com/Nadir-Software/unesco" target="_blank">
-                <button class="source-button">
-                <svg class="github" height="24" version="1.1" viewBox="0 0 16 16" width="24">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="#ffffff"></path>
-                </svg>
+        <div class="row">
+            <a href="https://nadir-software.github.io/unesco" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">open_in_new</span>
+                    Run in browser
+                </button>
+            </a>
 
-                View Source
+            <a href="https://www.github.com/Nadir-Software/unesco" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">code</span>
+                    View source
                 </button>
             </a>
         </div>
     </div>
 
-    <div class="hero">
+    <div class="divider"></div>
+
+    <div class="column" style="margin-top: 5rem;"  >
         <div style="font-size: 5rem;" class="material-symbols-rounded">change_circle</div>
-        <div class="hero-text">
-            <h1>Cases</h1>
-            <p>Convert between different cases</p>
+
+        <div>
+            <h1>Case Converter</h1>
+            <p>Convert between cases</p>
         </div>
 
-        <div class="logo">
-            <a href="https://nadir-software.github.io/case" target="_blank"><button>Run in browser</button></a>
-            
-            <a href="https://github.com/Nadir-Software/case" target="_blank">
-                <button class="source-button">
-                <svg class="github" height="24" version="1.1" viewBox="0 0 16 16" width="24">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="#ffffff"></path>
-                </svg>
+        <div class="row">
+            <a href="https://nadir-software.github.io/case" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">open_in_new</span>
+                    Run in browser
+                </button>
+            </a>
 
-                View Source
+            <a href="https://www.github.com/Nadir-Software/case" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">code</span>
+                    View source
                 </button>
             </a>
         </div>
     </div>
 
-    <div class="hero">
-        <div class="words"></div>
-        <div class="hero-text">
+    <div class="divider"></div>
+
+    <div class="column" style="margin-top: 5rem;"  >
+        <div class="logo-words"></div>
+
+        <div>
             <h1>Words</h1>
-            <p>English words</p>
+            <p>Randomly selected English words</p>
         </div>
 
-        <div class="logo">
-            <a href="https://nadir-software.github.io/words" target="_blank"><button>Run in browser</button></a>
-            
-            <a href="https://github.com/Nadir-Software/words" target="_blank">
-                <button class="source-button">
-                <svg class="github" height="24" version="1.1" viewBox="0 0 16 16" width="24">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="#ffffff"></path>
-                </svg>
+        <div class="row">
+            <a href="https://nadir-software.github.io/words" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">open_in_new</span>
+                    Run in browser
+                </button>
+            </a>
 
-                View Source
+            <a href="https://www.github.com/Nadir-Software/words" target="_blank">
+                <button>
+                    <span class="material-symbols-rounded">code</span>
+                    View source
                 </button>
             </a>
         </div>
     </div>
-
-    <button id="theme-button" onclick="setTheme('light')" class="theme-switcher">
-        <span id="theme-icon" class="material-symbols-rounded">
-            light_mode
-        </span>
-    </button>
-
-    <script>
-        if (themeSaved == "main") {
-            setTheme("main");
-        }
-
-        else {
-            setTheme("light");
-        }
-    </script>
 </body>
 </html>
