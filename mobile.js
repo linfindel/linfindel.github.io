@@ -1,5 +1,5 @@
 setInterval(() => {
-    if (screen.width < screen.height) {
+    if (window.innerWidth < window.innerHeight) {
         document.getElementById("pfp").className = "card-flat-bottom";
         document.getElementById("pfp").style.width = "100%";
         document.getElementById("pfp").style.height = "20rem";
